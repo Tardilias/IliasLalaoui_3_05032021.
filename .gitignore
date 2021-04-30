@@ -1,5 +1,5 @@
 *pdf
-/node_modules
-/Maquettes Ohmyfood
-package.json
-package-lock.json
+node_modules/
+Maquettes Ohmyfood/
+package.json/
+package-lock.json/
