@@ -51,16 +51,22 @@
   position: relative;
 
   &__icon {
-    margin-right: 1rem;
+    margin-left: 5rem;
   }
 
   &__text {
-    font-weight: 500;
+    font-weight: 700;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    background-color: #f3f3f3;
+    margin: 0 2rem 0 1rem;
   }
 }
 
 .hero {
-  padding: 2rem;
+  padding: 2rem 2rem 5rem 2rem;
   text-align: center;
   background-color: rgb(250, 250, 250);
 
@@ -70,16 +76,17 @@
 
   &__subtitle {
     font-weight: 300;
-    margin: 1.5rem 0;
+    margin: 0.6rem 0 2.5rem 0;
   }
 
   &__btn {
     @include button(primary);
+    text-decoration: none;
   }
 }
 
-.tuto {
-  padding: ($appPadding + 1rem) $appPadding;
+.guide {
+  padding: ($appPadding + 0.75rem) $appPadding;
 
   &__title {
     margin-top: 0;
@@ -98,12 +105,15 @@
 
   &__step {
     padding: 1.5rem;
-    margin: 1rem 0 1rem 0.75rem;
+    margin: 1.5rem 0 1.5rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
     background-color: #f6f6f6;
     display: flex;
     position: relative;
+    &:hover {
+      background-color: #f5edff;
+    }
 
     @media (min-width: 64rem) {
       flex: 1;
@@ -147,7 +157,7 @@
 
 .restaurants {
   background-color: #f6f6f6;
-  padding: ($appPadding + 1rem) $appPadding;
+  padding: ($appPadding + 0.75rem) $appPadding;
 }
 
 .cards {
